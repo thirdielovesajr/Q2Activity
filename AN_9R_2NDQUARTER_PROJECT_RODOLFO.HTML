@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>McDonald's Menu</title>
+  <style>
+    body {
+      background-color: #FFEBCD;
+    }
+    h1 {
+      color: #800000;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px #DAA520;
+      text-decoration: underline;
+    }
+    img {
+      border-style: solid;
+      border-width: 1px;
+      border-color: #800000;
+      margin: 10px;
+      padding: 10px;
+      height: 100px;
+      width: 150px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border-style: solid;
+      border-width: 1px;
+      border-color: #800000;
+      padding: 10px;
+    }
+    a {
+      color: #800000;
+      text-decoration: underline;
+    }
+    form {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    }
+    h2, h3 {
+    text-align: center;
+    }
+    label {
+    display: block;
+    margin-top: 10px;
+    }
+    input[type="text"], input[type="email"], select, input[type="number"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="TOP">McDonald's Menu</h1>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0005_BigMac_832x472:product-header-desktop?wid=830&hei=458&dpr=off" alt="Big Mac" height="100" width="150">
+        Big Mac
+      </td>
+      <td>Two beef patties, special sauce, lettuce, cheese, pickles, onions on three sesame seed buns.</td>
+      <td>P300</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6053_LargeFries_832x472:product-header-desktop?wid=830&hei=456&dpr=off" alt="French Fries">
+        Quarter Pounder
+      </td>
+      <td>The famous mcdonald french fries served hot and crispy (depending if your lucky)</td>
+      <td>P85</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202208_5280_10McNuggets_Stacked_832x472:product-header-desktop?wid=830&hei=458&dpr=off" alt="Chicken Mcnuggets">
+        Chicken Mcnuggets
+      </td>
+      <td>4,6 or 10 pcs of crispy and juicy chicken nuggets paired with one of many sauces</td>
+      <td>P80 - P225</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202006_0003_Cheeseburger_StraightBun_832x472:product-header-desktop?wid=830&hei=458&dpr=off" alt="Cheeseburger">
+        Cheeseburger
+      </td>
+      <td>The original mcdonalds burger but better</td>
+      <td>P75</td>
+    </tr>
+</table>
+<form>
+  <h2>Order at McDonald's</h2>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="Phone Number">Phone Number:</label><br>
+  <input type="phone number" id="phone number" name="phone number"><br><br>
+  <h3>Order Details</h3>
+  <label for="item">Item:</label><br>
+  <select id="item" name="item">
+    <option value="burger">Cheeseburger</option>
+    <option value="fries">Fries</option>
+    <option value="mac">Big Mac</option>
+    <option value="nuggets">Mcnuggets</option>
+  </select><br>
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity" min="1"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<a href="#TOP">TOP</a>
+
+
+
+</body>
